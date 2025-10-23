@@ -12,7 +12,7 @@ async function startSlideshow(id, baseUrl) {
     while (true) {
         await delay(3000);
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        imgElement.src = `${baseUrl}images[currentImageIndex]`;
+        imgElement.src = `${baseUrl}${images[currentImageIndex]}`;
     }
 }
 
