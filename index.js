@@ -8,7 +8,6 @@ async function startSlideshow(id) {
     const baseUrl = base?.href ?? "";
     const imgElement = document.getElementById(id);
     imgElement.src = images[currentImageIndex];
-    document.body.appendChild(imgElement);
 
     while (true) {
         await delay(3000);
